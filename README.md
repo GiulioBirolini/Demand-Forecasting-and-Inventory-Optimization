@@ -6,4 +6,3 @@ The full dataset comes from the Kaggle competition
 [Walmart Recruiting - Store Sales Forecasting](https://www.kaggle.com/competitions/walmart-recruiting-store-sales-forecasting).
 Due to file size restrictions, raw data are not stored in this repository.  
 
-Please download the dataset from Kaggle and place the CSV files under:
