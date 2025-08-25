@@ -2,6 +2,10 @@
 data/raw/*
 !data/raw/README.md
 
+# Ignore processed data
+data/processed/*
+!data/processed/README.md
+
 # Ignore saved models
 *.pkl
 *.joblib
