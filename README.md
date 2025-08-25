@@ -25,4 +25,25 @@ Install the required dependencies:
 ```bash
 pip install -r requirements.txt
 
+## How to Run
+
+1. Place raw data in `data/raw/`  
+2. Run the notebooks in order (01 → 02 → 03)  
+3. The optimized ordering policy is saved under `data/processed/`  
+
+## Project Summary
+
+- **Forecast accuracy (RMSE):** I trained several linear and tree-based regression models. The best-performing model was a GradientBoostingRegressor, which I further fine-tuned via hyperparameter optimization. On the test set, the model achieved an RMSE of 2,795.82 units, meaning that, on average, the predicted demand deviates from the actual demand by this amount. This level of accuracy supports reliable inventory decisions.
+
+- **Inventory optimization results:** The model minimizes total cost by balancing purchasing, holding, and shortage penalties. I applied Operations Research principles to analyze the optimization problem using linear programming in three steps:
+
+  1. **Business problem:** define the operational objective and constraints (e.g., budget, warehouse capacity, service levels).  
+  2. **Mathematical model:** formulate the parameters, decision variables, and constraints in a structured LP framework.  
+  3. **Computational model:** use the demand forecasts from notebook `02_Forecasting.ipynb` to determine the optimal order quantities in each period so as to minimize total cost.
+
+## Illustrative Example
+
+![Inventory Optimization Example](results/figures/inventory_optimization_example.png)
+
+*This plot shows order quantities (Q), inventory levels (I), shortages (S), and forecasted demand over a rolling 24-week horizon, illustrating the output of the optimization model.*
 
