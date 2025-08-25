@@ -1,6 +1,7 @@
-# Demand-Forecasting-and-Inventory-Optimization
+# Demand Forecasting and Inventory Optimization
 
-Demand forecasting with ML and inventory optimization using PuLP.
+Efficient inventory management relies on accurate demand forecasts and smart ordering policies. In this project, ML regression models predict demand, and a linear programming approach with PuLP determines the optimal ordering strategy.
+
 
 ## Data
 
